@@ -1,5 +1,5 @@
 function connexion(event) {
 
     event.preventDefault();
-    window.location.href ="Dashboard.html"
+    window.location.href ="dashbord.html"
 }
