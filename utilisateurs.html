@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTECH-Utilisateurs</title>
+    <link rel="stylesheet" href="Ressources/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>YTECH</h1>
+    </header>
+    <nav>
+        <a href="dashbord.html">Tableau de bord</a>
+        <a href="recettes.html">Recettes</a>
+        <a href="depenses.html">Depenses</a>
+        <a href="operation.html">Operations</a>
+        <a href="categories.html">Categories</a>
+        <a href="utilisateurs.html" class="active">Utilisateurs</a>
+    </nav>
+    <main>
+        <h2 class="page-title"> Utilisateurs</h2>
+        <p class="page-subtitle">Liste des utilisateurs</p>
+        <div class="toolbar">
+            <button class="btn-add">+ Nouvel utilisateur</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom d'utilisateur</th>
+                    <th>Adresse e-mail</th>
+                    <th>Rôle</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="users-list">
+                <tr>
+                    <td>ZANGO Salomon </td>
+                    <td>salomon.zango@gmail.com</td>
+                    <td><span class="badge-admin">Administrateur</span></td>
+                    <td class="actions"><a href="#" class="Modifier">Modifier</a></td>
+                </tr>
+                <tr>
+                    <td>Vincent zeniga</td>
+                    <td>vincent.zeniga@gmail.com</td>
+                    <td><span class="badge-user">Utilisateur</span></td>
+                    <td class="actions"><a href="#" class="Modifier">Modifier</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
