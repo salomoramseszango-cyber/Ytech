@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTECH-Gestion des dépenses</title>
+    <link rel="stylesheet" href="Ressources/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>YTECH</h1>
+        <nav>
+            <a href="dashbord.html">Tableau de bord</a>
+            <a href="recettes.html">Recettes</a>
+            <a href="depenses.html" class="active">Dépenses</a>
+            <a href="operation.html">Opérations</a>
+            <a href="categories.html">Catégories</a>
+            <a href="utilisateurs.html">Utilisateurs</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title-row">
+            <h2>Gestion des dépenses</h2>
+            <button type="button" class="add-expense-button">+ Ajouter une dépense</button>
+        </div>
+
+        <div class="cards">
+
+            <div class="card expense-total-card">
+                <div class="card-header">
+                    <h3>Total dépenses</h3>
+                </div>
+                <p class="amount">100 000 FCFA</p>
+                <span class="subtitle">par rapport au mois dernier</span>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nombre de dépenses</h3>
+                </div>
+                <p class="amount">12</p>
+                <span class="subtitle">opérations réalisées</span>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Catégorie principale</h3>
+                </div>
+                <p class="amount">Papier &amp; Encre</p>
+                <span class="subtitle">plus forte dépense</span>
+            </div>
+
+        </div>
+
+        <!-- Section Liste / Tableau des dépenses -->
+        <div class="card-table" style="margin-top: 20px;">
+            <h3>Liste des dépenses récentes</h3>
+
+            <table border="1" width="100%" style="border-collapse: collapse; text-align: left;">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Libellé</th>
+                        <th>Catégorie</th>
+                        <th>Mode de paiement</th>
+                        <th>Montant</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>22/09/2026</td>
+                        <td>Achat papier A4 80g</td>
+                        <td>Papier</td>
+                        <td>Espèces</td>
+                        <td>35 000 FCFA</td>
+                        <td>
+                            <a href="#">Modifier</a> | 
+                            <a href="#" onclick="return confirm('Voulez-vous vraiment supprimer cette dépense ?')">Supprimer</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20/09/2026</td>
+                        <td>Cartouches d'encre Epson</td>
+                        <td>Encre</td>
+                        <td>Mobile Money</td>
+                        <td>65 000 FCFA</td>
+                        <td>
+                            <a href="#">Modifier</a> | 
+                            <a href="#" onclick="return confirm('Voulez-vous vraiment supprimer cette dépense ?')">Supprimer</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</body>
+</html>
