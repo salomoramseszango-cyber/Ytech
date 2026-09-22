@@ -102,6 +102,7 @@ button{
 }
 
 body {
+
   font-family: 'Poppins', sans-serif;
   background-color: #e2e8f0; 
   color: #1e293b;
@@ -153,11 +154,6 @@ main {
   color: #079666; 
 }
 
-.sparkline {
-  width: 100%;
-  height: 30px;
-  margin-top: 10px;
-}
 
 .charts-grid {
   display: grid;
@@ -204,69 +200,6 @@ main {
 .dot.income { background-color: #1e293b; }   
 .dot.expenses { background-color: #a3e635; } 
 
-.bar-chart-mock {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 180px;
-  padding-top: 20px;
-}
-
-.bar-group {
-  display: flex;
-  gap: 6px;
-  align-items: flex-end;
-  height: 100%;
-}
-
-.bar {
-  width: 12px;
-  border-radius: 4px;
-}
-
-.bar.dark { background-color: #1e293b; }
-.bar.green { background-color: #a3e635; }
-
-
-.donut-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0;
-}
-
-.donut-mock {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  
-  background: conic-gradient(#ea580c 0% 35%, #a3e635 35% 70%, #1e293b 70% 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.donut-center {
-  width: 95px;
-  height: 95px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.donut-label {
-  font-size: 0.75rem;
-  color: #6b7280;
-}
-
-.donut-value {
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: #111827;
-}
 
 @media (max-width: 900px) {
   .cards, .charts-grid {
