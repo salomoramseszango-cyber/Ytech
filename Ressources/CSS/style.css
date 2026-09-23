@@ -104,7 +104,7 @@ button{
 body {
 
   font-family: 'Poppins', sans-serif;
-  background-color: #e2e8f0; 
+  background-color: #e3f1f8; 
   color: #1e293b;
   padding: 20px;
 }
@@ -122,7 +122,7 @@ main {
 
 .card {
   flex: 1;
-  background-color: #ffffff;
+  background-color: #ffffffff;
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
@@ -163,7 +163,7 @@ main {
 }
 
 .chart-card {
-  background-color: #ffffff;
+  background-color: #ffffffff;
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
@@ -239,7 +239,6 @@ body:has(header) main {
   padding: 40px 20px;
 }
 
-<<<<<<< HEAD
 body.expenses-page main {
   display: grid;
   grid-template-columns: minmax(320px, 0.8fr) minmax(0, 1.2fr);
@@ -247,7 +246,7 @@ body.expenses-page main {
 }
 
 body.expenses-page main > h2,
-body.expenses-page .summary-table {
+body.expenses-page .card-table {
   grid-column: 1 / -1;
 }
 
@@ -256,7 +255,6 @@ body.expenses-page .card-table {
   margin-top: 0 !important;
 }
 
-/* Styles de la page depenses */
 body:has(header) main > h2 {
   margin-bottom: 24px;
   color: #111827;
@@ -298,7 +296,7 @@ body:has(header) .expense-total-card .amount {
   color: #dc2626;
 }
 
-body:has(header) .summary-table {
+body:has(header) .card-table {
   margin-bottom: 20px;
   padding: 24px;
   overflow-x: auto;
@@ -307,50 +305,46 @@ body:has(header) .summary-table {
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
 }
 
-body:has(header) .summary-table h3 {
+body:has(header) .card-table h3 {
   margin-bottom: 20px;
   color: #1e293b;
 }
 
-body:has(header) .summary-table table {
+body:has(header) .card-table table {
   width: 100%;
   min-width: 600px;
   border-collapse: collapse;
   text-align: left;
 }
 
-body:has(header) .summary-table th,
-body:has(header) .summary-table td {
+body:has(header) .card-table th,
+body:has(header) .card-table td {
   padding: 14px;
   border-bottom: 1px solid #e2e8f0;
 }
 
-body:has(header) .summary-table thead th {
+body:has(header) .card-table thead th {
   color: #475569;
   background: #f8fafc;
   font-size: 0.85rem;
   text-transform: uppercase;
 }
 
-body:has(header) .summary-table tbody th {
+body:has(header) .card-table tbody th {
   color: #1e293b;
 }
 
-body:has(header) .summary-table tbody td {
+body:has(header) .card-table tbody td {
   color: #64748b;
 }
 
-body:has(header) .summary-table tbody tr:last-child th,
-body:has(header) .summary-table tbody tr:last-child td {
+body:has(header) .card-table tbody tr:last-child th,
+body:has(header) .card-table tbody tr:last-child td {
   border-bottom: 0;
 }
 
 body:has(header) .card-header {
   justify-content: space-between;
-}
-
-body:has(header) .trend.negative {
-  color: #dc2626;
 }
 
 body:has(header) .subtitle {
@@ -535,10 +529,6 @@ body:has(header) .card-table td a:last-of-type:hover {
   }
 }
 
-
-
-
-
 *{
   margin: 0;
   padding: 0;
@@ -584,7 +574,6 @@ nav a:hover {
 }
 nav a.active {
   color: #fff;
-  border-bottom: 3px solid #38bdf8;
   font-weight: 600;
 }
 main{
@@ -616,6 +605,14 @@ main{
 }
 .btn-add:hover{
   background: #1d4ed8;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 table{
   width: 100%;
@@ -661,5 +658,52 @@ tr:hover{
   text-decoration: none;
   font-size: 0.85rem;
   margin-right: 10px;
+}
+
+/* Navigation verticale sous le nom du site. */
+body:has(header) header {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 220px;
+  min-height: 100vh;
+  padding: 24px 20px;
+}
+
+body:has(header) nav {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  padding: 12px 0 0;
+  background: transparent;
+}
+
+body:has(header) nav a {
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
+}
+
+body:has(header) main {
+  max-width: none;
+  margin-left: 220px;
+}
+
+@media (max-width: 760px) {
+  body:has(header) header {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    padding: 18px 40px;
+  }
+
+  body:has(header) main {
+    margin-left: 0;
+  }
 }
 
