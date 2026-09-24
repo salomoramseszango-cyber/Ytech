@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTECH-Opération</title>
+    <link rel="stylesheet" href="Ressources/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>YTECH</h1>
+        <nav>
+            <a href="dashbord.html">Tableau de bord</a>
+            <a href="recettes.html">Recettes</a>
+            <a href="depenses.html">Depenses</a>
+            <a href="operation.html"class="active">Operations</a>
+            <a href="categories.html" >Categories</a>
+            <a href="utilisateurs.html">Utilisateurs</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page-title">Opérations</h2>
+        <p class="page-subtitle">Listes des Opérations</p>
+        <div class="toolbar">
+            <button class="btn-add">+Nouvelle Opération</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Catégorie</th>
+                    <th>Type</th>
+                    <th>Montant (FCFA)</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2026-09-24</td>
+                    <td>Impression</td>
+                    <td>Recette</td>
+                    <td>15 000</td>
+                    <td>Impression de 10 affiches</td>
+                    <td>
+                        <div class="table-actions">
+                            <button class="action-btn edit">Modifier</button>
+                            <button class="action-btn delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2026-09-25</td>
+                    <td>Achat de matériel</td>
+                    <td>Dépense</td>
+                    <td>8 000</td>
+                    <td>Achat de papier A4</td>
+                    <td>
+                        <div class="table-actions">
+                            <button class="action-btn edit">Modifier</button>
+                            <button class="action-btn delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
